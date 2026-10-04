@@ -1,0 +1,6 @@
+{
+  "name": "Makran Fix - Mobile Phone Repair",
+  "description": "Fast & reliable mobile phone repair service by Makran Lab at Amma Tower Saddar. Instant online booking, price estimates, WhatsApp chat & call.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

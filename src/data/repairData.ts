@@ -1,0 +1,151 @@
+import { RepairCategory, DeviceBrand } from '../types';
+
+export const SHOP_INFO = {
+  name: 'Makran Lab',
+  tagline: 'Precision Mobile Phone Diagnostic & Repair Center',
+  phone: '03323819288',
+  internationalPhone: '+923323819288',
+  address: 'Amma Tower, Saddar, B-80, PN',
+  city: 'Karachi, Pakistan',
+  timings: 'Monday – Saturday: 11:30 AM – 10:00 PM (Sunday Closed)',
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Amma+Tower+Saddar+Karachi',
+  whatsappBaseUrl: 'https://wa.me/923323819288',
+  warrantyGuarantee: 'Up to 90 Days Service Warranty on Genuine Part Replacements',
+};
+
+export const REPAIR_CATEGORIES: RepairCategory[] = [
+  {
+    id: 'broken-screen',
+    emoji: '💥',
+    title: 'Broken Screen',
+    subtitle: 'Display damaged',
+    estimatedTime: '30–45 mins',
+    averageCostPKR: 'PKR 2,500 – 18,000',
+    description: 'Cracked glass, black lines, bleeding OLED, flickering or non-responsive touch digitizer replacement.',
+  },
+  {
+    id: 'battery',
+    emoji: '🔋',
+    title: 'Battery',
+    subtitle: 'Battery problem',
+    estimatedTime: '20–30 mins',
+    averageCostPKR: 'PKR 1,800 – 7,500',
+    description: 'Rapid battery drain, bloated cell, unexpected shutdowns, slow charging, or 100% genuine cell upgrade.',
+  },
+  {
+    id: 'charging',
+    emoji: '⚡',
+    title: 'Charging',
+    subtitle: 'Not charging',
+    estimatedTime: '25–40 mins',
+    averageCostPKR: 'PKR 1,200 – 4,500',
+    description: 'Loose Type-C / Lightning port, IC charging malfunction, moisture detected warning, or pin repair.',
+  },
+  {
+    id: 'camera',
+    emoji: '📷',
+    title: 'Camera',
+    subtitle: 'Camera problem',
+    estimatedTime: '30–50 mins',
+    averageCostPKR: 'PKR 2,000 – 9,500',
+    description: 'Blurry lens, autofocus vibration, cracked camera glass lens, black screen on camera app, or OIS fix.',
+  },
+  {
+    id: 'speaker',
+    emoji: '🔊',
+    title: 'Speaker',
+    subtitle: 'Sound problem',
+    estimatedTime: '20–35 mins',
+    averageCostPKR: 'PKR 1,000 – 3,500',
+    description: 'Muffled earpiece sound during calls, crackling bottom loudspeaker, microphone noise, or audio IC repair.',
+  },
+  {
+    id: 'network',
+    emoji: '📶',
+    title: 'Network',
+    subtitle: 'Signal problem',
+    estimatedTime: '1–2 hours',
+    averageCostPKR: 'PKR 2,000 – 6,000',
+    description: 'No Service, searching signal, weak Wi-Fi/Bluetooth reception, SIM card slot issue, baseband IC diagnosis.',
+  },
+  {
+    id: 'water-damage',
+    emoji: '💧',
+    title: 'Water Damage',
+    subtitle: 'Phone got wet',
+    estimatedTime: '2–4 hours',
+    averageCostPKR: 'PKR 2,500 – 8,000',
+    description: 'Ultrasonic chemical board cleaning, short-circuit recovery, corrosion removal, power restoration.',
+  },
+  {
+    id: 'software',
+    emoji: '💻',
+    title: 'Software',
+    subtitle: 'OS & bootloop issue',
+    estimatedTime: '30–60 mins',
+    averageCostPKR: 'PKR 1,000 – 3,000',
+    description: 'Stuck on logo (bootloop), forgot screen lock password, official firmware flash, FRP lock, performance lag.',
+  },
+  {
+    id: 'other',
+    emoji: '❓',
+    title: 'Other',
+    subtitle: 'Something else',
+    estimatedTime: 'Custom inspection',
+    averageCostPKR: 'Free Inspection',
+    description: 'Power/volume button stuck, housing dent, face-ID repair, motherboard micro-soldering, or unknown problem.',
+  },
+];
+
+export const DEVICE_BRANDS: DeviceBrand[] = [
+  {
+    id: 'apple',
+    name: 'Apple iPhone',
+    popularModels: ['iPhone 15 Pro Max', 'iPhone 15', 'iPhone 14 Pro', 'iPhone 13', 'iPhone 12', 'iPhone 11', 'iPhone X / XS', 'iPhone 8 / SE'],
+  },
+  {
+    id: 'samsung',
+    name: 'Samsung Galaxy',
+    popularModels: ['Galaxy S24 Ultra', 'Galaxy S23', 'Galaxy S22', 'Galaxy A54', 'Galaxy A34', 'Galaxy A14', 'Galaxy Note 20', 'Galaxy Z Flip'],
+  },
+  {
+    id: 'xiaomi',
+    name: 'Xiaomi / Redmi / Poco',
+    popularModels: ['Redmi Note 13', 'Redmi Note 12', 'Redmi 12', 'Poco X6 Pro', 'Poco F5', 'Xiaomi 13T', 'Redmi Note 11'],
+  },
+  {
+    id: 'vivo',
+    name: 'Vivo',
+    popularModels: ['Vivo V30', 'Vivo V29', 'Vivo Y27', 'Vivo Y17s', 'Vivo V27e', 'Vivo X80'],
+  },
+  {
+    id: 'oppo',
+    name: 'Oppo',
+    popularModels: ['Oppo Reno 11', 'Oppo Reno 10', 'Oppo A78', 'Oppo A58', 'Oppo Find N3 Flip'],
+  },
+  {
+    id: 'infinix',
+    name: 'Infinix',
+    popularModels: ['Infinix Note 40 Pro', 'Infinix Note 30', 'Infinix Hot 40', 'Infinix Zero 30', 'Infinix Smart 8'],
+  },
+  {
+    id: 'tecno',
+    name: 'Tecno',
+    popularModels: ['Tecno Camon 30', 'Tecno Spark 20', 'Tecno Pova 6', 'Tecno Phantom V Flip'],
+  },
+  {
+    id: 'oneplus',
+    name: 'OnePlus',
+    popularModels: ['OnePlus 12', 'OnePlus 11', 'OnePlus Nord CE 3', 'OnePlus 9 Pro', 'OnePlus 8T'],
+  },
+  {
+    id: 'google',
+    name: 'Google Pixel',
+    popularModels: ['Pixel 8 Pro', 'Pixel 8', 'Pixel 7 Pro', 'Pixel 7a', 'Pixel 6 Pro', 'Pixel 6a'],
+  },
+  {
+    id: 'realme',
+    name: 'Realme',
+    popularModels: ['Realme 12 Pro', 'Realme 11', 'Realme C53', 'Realme GT Neo 5'],
+  },
+];
